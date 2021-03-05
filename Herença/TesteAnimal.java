@@ -1,74 +1,69 @@
-package Aprende;
 import java.util.Scanner;
 
 public class TesteAnimal {
-	
 	public static void main(String[] args) {
-		
 		Scanner leia = new Scanner(System.in);
-		Cachorro cachorro = new Cachorro();
-		Cavalo cavalo = new Cavalo();
-		Preguiça preguiça = new Preguiça();
-		
+		Gato gato = new Gato();
+		Águia aguia = new Águia();
+		Macaco macaco = new Macaco();
 		Animal animal = null;
+		
 		int x=0;
-		do
+		do 
 		{
-			System.out.println("Qual o tipo do seu animal: //01 cachorro. //02 cavalo. //03 preguiça ");
-			x=leia.nextInt();
-			if(x==1)
-			{
-				animal=cachorro;
-				System.out.println("Qual o nome do seu Cachorro ? ");
-				String nome = leia.next();
-				System.out.println("Quantos anos seu Cachorro tem ? ");
-				int idade= leia.nextInt();
-				System.out.println("Essa é lega! Qual o som seu cachorro emite");
-				String som = leia.next();
-				System.out.println("-------------------------------------------------");
-				cachorro.Nome(nome);
-				cachorro.Idade(idade);
-				cachorro.Som(som);
-				cachorro.Correr();
-			}
-			else if(x==2)
-			{
-				animal=cavalo;
-				System.out.println("Qual o nome do seu Cavalo? ");
-				String nome = leia.next();
-				System.out.println("Quantos anos seu Cavalo tem? ");
-				int idade= leia.nextInt();
-				System.out.println("Essa é lega! Qual o som seu Cavalo emite");
-				String som = leia.next();
-				System.out.println("-------------------------------------------------");
-				cavalo.Nome(nome);
-				cavalo.Idade(idade);
-				cavalo.Som(som);
-				cavalo.Correr();
-			}
-			else if(x==3)
-			{
-				animal=preguiça;
-				System.out.println("Qual o nome do seu Preguiça? ");
-				String nome = leia.next();
-				System.out.println("Quantos anos seu Preguiça tem? ");
-				int idade= leia.nextInt();
-				System.out.println("Essa é lega! Qual o som seu Preguiça emite");
-				String som = leia.next();
-				System.out.println("-------------------------------------------------");
-				preguiça.Nome( nome );
-				preguiça.Idade( idade );
-				preguiça.Som( som );
-				preguiça.SubirArvores();
-				
-			} 
-			else
-			{
-			System.out.println("Informação Invalida");	
-			}
-			
+		System.out.println("Digite o número da opção: *** 1 ***,*** 2 ***,*** 3 ***, ");
+		x=leia.nextInt();
+		if(x==1)
+		{
+			animal=gato;
+			System.out.println("Qual o nome do seu Gato ? ");
+			String nome = leia.next();
+			System.out.println("Quantos anos seu Gato tem ? ");
+			int idade= leia.nextInt();
+			System.out.println("Qual o som seu Gato emite");
+			String som = leia.next();
+			System.out.println("-------------------------------------------------");
+			gato.Nome(nome);
+			gato.Idade(idade);
+			gato.Som(som);
 			
 		}
-		while (x<=0 || x>=4);
-	}
-}
+		
+		else if(x==2)
+		{
+			animal=aguia;
+			System.out.println("Qual o nome do seu Águia? ");
+			String nome = leia.next();
+			System.out.println("Quantos anos sua Águia tem? ");
+			int idade= leia.nextInt();
+			System.out.println(" Qual o som sua Águia emite");
+			String som = leia.next();
+			System.out.println("-------------------------------------------------");
+			aguia.Nome(nome);
+			aguia.Idade(idade);
+			aguia.Som(som);
+		}
+		else if(x==3)
+		{
+			animal=macaco;
+			System.out.println("Qual o nome do seu macaco? ");
+			String nome = leia.next();
+			System.out.println("Quantos anos seu macaco tem? ");
+			int idade= leia.nextInt();
+			System.out.println("Qual o som seu macaco emite");
+			String som = leia.next();
+			System.out.println("-------------------------------------------------");
+			macaco.Nome( nome );
+			macaco.Idade( idade );
+			macaco.Som( som );
+			
+			
+		} 
+		else
+		{
+		System.out.println("Informação Invalida");	
+		}
+		
+		
+	}while(x<=0||x>=4);
+}}

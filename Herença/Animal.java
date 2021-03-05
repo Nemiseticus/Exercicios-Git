@@ -1,32 +1,25 @@
-package Aprende;
 
-public abstract class  Animal { //classe abstrata 
-	String TipoAnimal; //ATRIBUTO
+public abstract class Animal { //classe abstrata
 	
-	public Animal (String TipoAnimal)	//Construtor
+	private String Espécie;
+	
+	public Animal (String Especie)
 	{
-		this.TipoAnimal = TipoAnimal; 
+		this.Espécie=Espécie;
+			
 	}
-	// Comece a declaração de metodo abstratos
-	abstract public void Nome(String nomeanimal);
-	abstract public void Idade(int idadeanimal);
-	abstract public void Som(String somanimal);
-	//
-	//get set
-	public String getTipoAnimal() {
-		return TipoAnimal;
+	abstract public void Nome (String nomeanimal);
+	abstract public void Idade (int idadeanimal);
+	abstract public void Som (String somanimal);
+	
+	public String getEspécie() {
+		return Espécie;
 	}
-	public void setTipoAnimal(String tipoAnimal) {
-		TipoAnimal = tipoAnimal;
+	public void setEspécie(String espécie) {
+		Espécie = espécie;
 	}
 	
 	
 	
 	
-	
-	/*Crie uma hierarquia de classes conforme abaixo com os seguintes atributos e
-	comportamentos (observe a tabela), utilize os seus conhecimentos e distribua as
-	características de forma que tudo o que for comum a todos os animais fique na classe
-	Animal:*/
-
 }
