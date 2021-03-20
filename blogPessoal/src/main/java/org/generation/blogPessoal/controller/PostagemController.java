@@ -21,7 +21,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 
 @RestController  // Dizendo que esa classe se trata de um controlador
 @RequestMapping("/postagens") // Caminho geral que a body/corpo vai ter conforme o parametro dentro dos parenteses . Quais comando/controlador vai ter no caminho.
-@CrossOrigin("*") // Significa que ira aceitar requisições de qualquer lugar. Sem requisições
+@CrossOrigin("*") // Significa que i32ra aceitar requisições de qualquer lugar. Sem requisições
 public class PostagemController {
 
 	@Autowired  // Puxa e Autoriza/Permite instanciar todos os metodos dentro da interface, nesse caso, na classe interface. 
